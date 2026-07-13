@@ -27,6 +27,7 @@ This repository will cover topics including:
 - End-to-End LangGraph Projects
 
 Each topic will include:
+
 - 📓 Jupyter Notebook
 - 💻 Well-commented code
 - 📝 Explanations
@@ -36,7 +37,7 @@ Each topic will include:
 
 ## 📂 Repository Structure
 
-```
+```text
 learning-langgraph/
 │
 ├── Part-01-StateGraph-Basics/
@@ -65,14 +66,53 @@ Topics covered:
 - Executing the Graph
 - Understanding State Updates
 
-### Mini Project
+---
 
-📧 **Email Router Agent**
+## 🚀 Mini Projects
+
+### 📧 Email Router Agent
 
 A simple LangGraph-based workflow that:
+
 - Reads customer emails
-- Classifies them into **Sales** or **Billing**
+- Classifies emails into **Sales** or **Billing**
 - Routes the email to the appropriate department using conditional edges
+
+**Concepts Practiced**
+
+- StateGraph
+- Conditional Routing
+- Router Functions
+- Node Communication
+- Graph Execution
+
+---
+
+### 📦 Order Status Agent (Tool Calling)
+
+A LangGraph-powered AI agent that uses **tool calling** to inspect customer orders and answer order-related queries.
+
+**Features**
+
+- Accepts natural language order queries from users.
+- Uses LangGraph's **ToolNode** to invoke tools.
+- Retrieves order details using a custom order lookup tool.
+- Returns order information such as:
+  - Order Status
+  - Product Name
+  - Delivery Status
+  - Estimated Delivery Date
+- Demonstrates the complete **LLM → Tool → LLM** execution cycle.
+
+**Concepts Practiced**
+
+- Tool Calling
+- ToolNode
+- Conditional Edges
+- AIMessage Tool Calls
+- LangChain Tools
+- State Updates
+- Agentic Workflows
 
 ---
 
@@ -81,6 +121,7 @@ A simple LangGraph-based workflow that:
 - Python
 - LangGraph
 - LangChain
+- Google Gemini / OpenAI Compatible APIs
 - Hugging Face
 - Jupyter Notebook
 
