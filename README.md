@@ -76,7 +76,7 @@ A simple LangGraph-based workflow that:
 
 - Reads customer emails
 - Classifies emails into **Sales** or **Billing**
-- Routes the email to the appropriate department using conditional edges
+- Routes the email to the appropriate department using conditional edges.
 
 **Concepts Practiced**
 
@@ -116,6 +116,33 @@ A LangGraph-powered AI agent that uses **tool calling** to inspect customer orde
 
 ---
 
+### 🧠 Chatbot with Short-Term Memory
+
+A conversational AI chatbot built using LangGraph that demonstrates **short-term memory** through checkpointing.
+
+**Features**
+
+- Maintains conversation history across multiple user interactions.
+- Stores the graph state after each execution using LangGraph checkpoints.
+- Retrieves the latest checkpoint automatically using the same `thread_id`.
+- Remembers information shared earlier in the conversation.
+- Successfully tested by asking the chatbot to remember a user's name and later answer the question:
+  - **"What is my name?"**
+
+**Concepts Practiced**
+
+- Short-Term Memory
+- Checkpointing
+- SqliteSaver
+- Thread-based Conversations
+- State Persistence
+- Message History
+- System Messages
+- Conversational AI
+- LangGraph Memory
+
+---
+
 ## 🛠 Tech Stack
 
 - Python
@@ -123,6 +150,7 @@ A LangGraph-powered AI agent that uses **tool calling** to inspect customer orde
 - LangChain
 - Google Gemini / OpenAI Compatible APIs
 - Hugging Face
+- SQLite
 - Jupyter Notebook
 
 ---
